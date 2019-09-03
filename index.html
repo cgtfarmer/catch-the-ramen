@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"/>
+	<title>Catch the Ramen</title>
+	<link rel="stylesheet" href="assets/css/main.css"/>
+</head>
+<body id="page-grid">
+
+	<header id="page-header">
+		<h1>Catch the Ramen</h1>
+	</header>
+
+	<section id="page-main">
+		<h1 id="no-mobile-note">&lt;DOES NOT CURRENTLY SUPPORT MOBILE DEVICES&gt;</h1>
+		<canvas id="game-canvas">
+		</canvas>
+
+		<div id="start-menu">
+			<button id="easy" type="button" onmousedown="startGame(event, 'easy')">Easy</button>
+			<button id="medium" type="button" onmousedown="startGame(event, 'medium')">Medium</button>
+			<button id="hard" type="button" onmousedown="startGame(event, 'hard')">Hard</button>
+			<button id="insane" type="button" onmousedown="startGame(event, 'insane')">Insane</button>
+			<button id="legendary" type="button" onmousedown="startGame(event, 'legendary')">Legendary</button>
+			<button id="impossible" type="button" onmousedown="startGame(event, 'impossible')">Impossible</button>
+		</div>
+	</section>
+
+	<section id="page-help">
+		<br/>
+
+		<a class="inline" href="./assets/videos/demo.mp4">Demonstration</a>
+
+		<br/>
+		<br/>
+
+		<h3>Instructions</h3>
+		<p>You are Naruto, and your goal is to catch all of the ramen as quickly as possible</p>
+
+		<h3>Controls</h3>
+		<ul>
+			<li><p><strong>Difficulty:</strong> Use the difficulty buttons to select the desired difficulty</p>
+			<li><p><strong>Motion:</strong> The player's movement may be controlled with the arrow keys</p>
+			<li><p><strong>Catching:</strong> The catching action may be performed by pressing the spacebar. The action will only be successful if a bowl of ramen is close enough the player</p>
+		</ul>
+
+	</section>
+
+	<footer id="page-footer">
+		<p>Have questions/suggestions?</p>
+		<p>Contact me at: <a href="mailto:christian.gt.farmer@gmail.com">christian.gt.farmer@gmail.com</a></p>
+		<br>
+		<p>Creation date: 2019-06</p>
+		<p >&copy; 2019 Christian Farmer, All Rights Reserved</p>
+	</footer>
+
+	<script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+
+</body>
+</html>
